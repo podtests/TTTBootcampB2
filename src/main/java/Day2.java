@@ -1,6 +1,12 @@
+import school.Student;
+
 public class Day2 {
 
     public static void main(String[] args) {
+
+        Student s1 = new Student();
+        s1.name = "Akhil";
+        s1.printInfo('M');
 
 /*
         int i =6;
@@ -17,7 +23,9 @@ public class Day2 {
             i++;
         } while(i<5);
 
-
+        //Day2 d2 = new Day2();
+        //d2.incrementalLogic();
+        //incrementalLogic();
 
 
 
@@ -38,6 +46,9 @@ public class Day2 {
     }
 
     public void forloop() {
+
+        //incrementalLogic();
+
         int a = 0;
 
         //a = a+1;
