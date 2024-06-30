@@ -1,4 +1,4 @@
-package school;
+package oops.encapsulation;
 
   public class School {
 
