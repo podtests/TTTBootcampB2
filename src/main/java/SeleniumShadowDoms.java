@@ -12,7 +12,6 @@ public class SeleniumShadowDoms {
 
     public static void main(String[] args) {
 
-
         WebDriver wd = new ChromeDriver();
         wd.manage().window().maximize();
         wd.get("https://selectorshub.com/xpath-practice-page/");
