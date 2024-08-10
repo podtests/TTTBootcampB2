@@ -1,3 +1,5 @@
+package misc;
+
 import org.testng.annotations.*;
 
 public class DemoTest {
