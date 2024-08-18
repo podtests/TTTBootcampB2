@@ -13,7 +13,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 
-public class FeatureTest {
+public class Feature {
 
     //WebDriver wd;
     //WebDriverWait wait;

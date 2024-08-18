@@ -8,7 +8,7 @@
             </run>
         </groups>
         <classes>
-            <class name="testcases.FeatureTest">
+            <class name="testcases.Feature">
 
             </class>
         </classes>
