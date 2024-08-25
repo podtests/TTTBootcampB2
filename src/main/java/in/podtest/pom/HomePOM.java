@@ -8,6 +8,9 @@ public class HomePOM {
 
     By shopWomenButton = By.xpath("//a/span[text()='Shop women']");
 
+    String productItem = "//div[contains(@class, 'product-name')]/a/span[text()='$$']";
+
+
     WebDriver wd;
     public HomePOM(WebDriver wd) {
         this.wd = wd;
@@ -18,7 +21,16 @@ public class HomePOM {
         return this;
     }
 
-    public void clickShopWomen() {
+    //Nike air zoom pegasus 35
+    public ProductPOM clickProductItem(String productName) {
+        String updatedProductItem = productItem.replace("$$",productName);
+        wd.findElement(By.xpath(updatedProductItem)).click();
+        return new ProductPOM(wd);
+
+    }
+
+    public CategoryPOM clickShopWomen() {
         wd.findElement(shopWomenButton).click();
+        return new CategoryPOM(wd);
     }
 }

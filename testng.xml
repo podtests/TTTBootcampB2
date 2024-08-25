@@ -5,9 +5,7 @@
         <parameter name="password" value="Password"></parameter>
         <classes>
             <class name="in.podtest.testng.E2ETestcases">
-                <methods>
-                    <include name="verifyUserLoginSuccess"></include>
-                </methods>
+
             </class>
         </classes>
     </test>

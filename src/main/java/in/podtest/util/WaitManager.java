@@ -14,4 +14,21 @@ public class WaitManager {
         WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
+
+    public static void waitForElementNotVisible(WebDriver wd, By locator) {
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.not(ExpectedConditions.visibilityOfElementLocated(locator)));
+    }
+
+
+    public static void waitForElementVisible(WebDriver wd, By locator) {
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+
+    public static void waitForElementLoad(WebDriver wd, By locator, String attrName, String value) {
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.attributeContains(locator,attrName, value));
+    }
 }
