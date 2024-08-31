@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="e2eTestcases" >
+    <test name="chrome testing">
+        <classes>
+            <class name="in.podtest.cucumber.runners.CucumberTestRunner">
+            </class>
+        </classes>
+    </test>
+</suite>
