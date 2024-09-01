@@ -17,6 +17,7 @@
     <testng.version>7.10.2</testng.version>
     <selenium.version>4.22.0</selenium.version>
     <cucumber.version>7.18.1</cucumber.version>
+    <apache.poi.version>5.3.0</apache.poi.version>
   </properties>
 
   <dependencies>
@@ -57,6 +58,18 @@
       <version>${cucumber.version}</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>${apache.poi.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>${apache.poi.version}</version>
+    </dependency>
   </dependencies>
 
 
@@ -68,7 +81,7 @@
         <version>3.3.1</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng-cucumber.xml</suiteXmlFile>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

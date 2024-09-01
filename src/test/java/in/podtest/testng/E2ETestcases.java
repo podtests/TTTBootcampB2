@@ -2,9 +2,11 @@ package in.podtest.testng;
 
 
 import in.podtest.pom.*;
+import in.podtest.util.ExcelReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,8 +14,12 @@ import java.util.ArrayList;
 
 public class E2ETestcases {
 
-    @Parameters({"userName", "password"})
-    @Test
+    @DataProvider(name = "credentials")
+    public Object[][] testData() {
+        return ExcelReader.readDataFromExcelFile("Testdata1.csv");
+    }
+
+    @Test(dataProvider = "credentials")
     public void verifyUserAbleToAccessWomenPageSuccess(String userName, String password) {
 
         WebDriver wd = new ChromeDriver();
