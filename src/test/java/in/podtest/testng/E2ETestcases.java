@@ -2,9 +2,11 @@ package in.podtest.testng;
 
 
 import in.podtest.pom.*;
+import in.podtest.util.ConfigReader;
 import in.podtest.util.ExcelReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -12,17 +14,22 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 
-public class E2ETestcases {
+public class E2ETestcases extends BaseTest{
 
     @DataProvider(name = "credentials")
     public Object[][] testData() {
-        return ExcelReader.readDataFromExcelFile("Testdata1.csv");
+        return ExcelReader.readDataFromExcelFile("Testdata.xlsx");
     }
 
     @Test(dataProvider = "credentials")
     public void verifyUserAbleToAccessWomenPageSuccess(String userName, String password) {
+        WebDriver wd = null;
+        if(ConfigReader.getProperty("browser").equals("chrome")){
+            wd = new ChromeDriver();
+        } else {
+            wd = new EdgeDriver();
+        }
 
-        WebDriver wd = new ChromeDriver();
         LoginPOM loginPOM = new LoginPOM(wd);
         CartPOM cartPOM = new CartPOM(wd);
         CheckoutPOM checkoutPOM = new CheckoutPOM(wd);
@@ -46,7 +53,7 @@ public class E2ETestcases {
                 .selectDeliveryType("standard").clickContinueToPaymentButton();
 */
 
-        loginPOM.get("https://demo.evershop.io/account/login")
+        loginPOM.get(ConfigReader.getProperty("applicationURL"))
                 .fillUserName(userName).fillPassword(password).clickSubmit()
                 .waitForPageLoad();
 

@@ -11,18 +11,19 @@ import java.time.Duration;
 public class WaitManager {
 
     public static void waitForPageLoad(WebDriver wd, By locator) {
-        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
+
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("defaultWaitTime"))));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     public static void waitForElementNotVisible(WebDriver wd, By locator) {
-        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("defaultWaitTime"))));
         wait.until(ExpectedConditions.not(ExpectedConditions.visibilityOfElementLocated(locator)));
     }
 
 
     public static void waitForElementVisible(WebDriver wd, By locator) {
-        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("defaultWaitTime"))));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
