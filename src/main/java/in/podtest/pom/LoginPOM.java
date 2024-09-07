@@ -1,9 +1,13 @@
 package in.podtest.pom;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LoginPOM {
+
+    public static Logger logger = LogManager.getLogger(LoginPOM.class.getName());
     By userNameTextBox = By.xpath("//input[@name='email']");
     By passwordTextBox = By.xpath("//input[@name='password']");
     By signInButton = By.xpath("//button[@type='submit']");
@@ -11,6 +15,7 @@ public class LoginPOM {
     WebDriver wd ;
 
     public LoginPOM get(String url) {
+        logger.info("URL used is: "+ url);
         wd.get(url);
         return  this;
     }
@@ -20,6 +25,8 @@ public class LoginPOM {
     }
 
     public LoginPOM fillUserName(String username){
+        logger.info("Username is:"+username);
+
         wd.findElement(userNameTextBox).sendKeys(username);
         return this;
     }

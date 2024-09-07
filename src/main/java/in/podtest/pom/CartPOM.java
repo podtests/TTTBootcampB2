@@ -22,7 +22,7 @@ public class CartPOM {
 
     By productPrice = By.xpath("td[2]//span[@class='sale-price']");
 
-    By productQuantity = By.xpath("td[3]//span");
+    By productQuantity = By.xpath("td[3]//input");
 
     By productTotalPrice = By.xpath("td[4]//span");
     WebDriver wd;
@@ -59,7 +59,7 @@ public class CartPOM {
             ArrayList<String> rowContent = new ArrayList<String>();
             rowContent.add(row.findElement(productName).getText());
             rowContent.add(row.findElement(productPrice).getText());
-            rowContent.add(row.findElement(productQuantity).getText());
+            rowContent.add(row.findElement(productQuantity).getAttribute("value"));
             rowContent.add(row.findElement(productTotalPrice).getText());
 
             products.put(rowIndex, rowContent);

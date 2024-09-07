@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration name="ConfigTest" status="info">
+
+    <Appenders>
+
+        <Console name="CONSOLE">
+            <PatternLayout pattern="%p - %m%n"/>
+        </Console>
+
+
+        <File name="TC_LOG" fileName="logs/tc.log" append="false">
+            <PatternLayout pattern="%d [%t] %p %c - %m%n"/>
+        </File>
+    </Appenders>
+
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="CONSOLE" level="INFO"/>
+            <AppenderRef ref="TC_LOG" level="INFO"/>
+        </Root>
+    </Loggers>
+
+
+</Configuration>

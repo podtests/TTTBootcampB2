@@ -1,6 +1,8 @@
 package in.podtest.pom;
 
 import in.podtest.util.WaitManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class CheckoutPOM {
+
+    public static Logger logger = LogManager.getLogger(CheckoutPOM.class.getName());
 
     By fullNameTextBox = By.xpath("//input[@name='address[full_name]']");
 
@@ -88,13 +92,18 @@ public class CheckoutPOM {
     }
 
     public CheckoutPOM selectDeliveryType(String deliveryType) {
-        WaitManager.waitForElementNotVisible(wd,shippingMethodSection);
+        try {
+            WaitManager.waitForElementNotVisible(wd, shippingMethodSection);
 
-        if(deliveryType == "express") {
-            wd.findElement(expressDeliveryRB).click();
+            if (deliveryType == "express") {
+                wd.findElement(expressDeliveryRB).click();
 
-        }else {
-            wd.findElement(standardDeliveryRB).click();
+            } else {
+                wd.findElement(standardDeliveryRB).click();
+            }
+        } catch(Exception e){
+            logger.error(e.getMessage());
+            logger.error(e.getStackTrace().toString());
         }
         return this;
     }

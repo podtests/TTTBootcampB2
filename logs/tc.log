@@ -1,0 +1,18 @@
+2024-09-07 11:27:28,249 [main] WARN in.podtest.testng.E2ETestcases - I am a warn log
+2024-09-07 11:27:28,255 [main] FATAL in.podtest.testng.E2ETestcases - I am a fatal  log
+2024-09-07 11:27:28,256 [main] INFO in.podtest.testng.E2ETestcases - Testcase Started!
+2024-09-07 11:27:33,909 [main] INFO in.podtest.testng.E2ETestcases - Username used is: Akhiljda@gmail.com
+2024-09-07 11:27:33,913 [main] INFO in.podtest.testng.E2ETestcases - password used is: Password
+2024-09-07 11:27:33,918 [main] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
+2024-09-07 11:27:35,888 [main] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
+2024-09-07 11:27:51,497 [main] ERROR in.podtest.pom.CheckoutPOM - element not interactable
+  (Session info: chrome=128.0.6613.120)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e6ef3469056f83a4049372d70619bb3, clickElement {id=f.B1CDBB7AA0E6E0569F41FD5DA85D7722.d.024D81EF54E864F6CECAA4D7539875A1.e.154}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57420/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1e6ef3469056f83a4049372d70619bb3)] -> xpath: //div[@class='shipping-methods']//input[@type='radio' and @id='method0']]
+Session ID: 1e6ef3469056f83a4049372d70619bb3
+2024-09-07 11:27:51,500 [main] ERROR in.podtest.pom.CheckoutPOM - [Ljava.lang.StackTraceElement;@3a894088
+2024-09-07 11:27:51,671 [main] INFO in.podtest.testng.E2ETestcases - Testcase Ended!
