@@ -1,18 +1,52 @@
-2024-09-07 11:27:28,249 [main] WARN in.podtest.testng.E2ETestcases - I am a warn log
-2024-09-07 11:27:28,255 [main] FATAL in.podtest.testng.E2ETestcases - I am a fatal  log
-2024-09-07 11:27:28,256 [main] INFO in.podtest.testng.E2ETestcases - Testcase Started!
-2024-09-07 11:27:33,909 [main] INFO in.podtest.testng.E2ETestcases - Username used is: Akhiljda@gmail.com
-2024-09-07 11:27:33,913 [main] INFO in.podtest.testng.E2ETestcases - password used is: Password
-2024-09-07 11:27:33,918 [main] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
-2024-09-07 11:27:35,888 [main] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
-2024-09-07 11:27:51,497 [main] ERROR in.podtest.pom.CheckoutPOM - element not interactable
+2024-09-08 11:40:31,447 [TestNG-test-chrome testing-1] WARN in.podtest.testng.E2ETestcases - I am a warn log
+2024-09-08 11:40:31,452 [TestNG-test-chrome testing-1] FATAL in.podtest.testng.E2ETestcases - I am a fatal  log
+2024-09-08 11:40:31,452 [TestNG-test-chrome testing-1] INFO in.podtest.testng.E2ETestcases - Testcase Started!
+2024-09-08 11:40:31,452 [TestNG-test-chrome testing-1] INFO in.podtest.testng.E2ETestcases - Username used is: Akhiljda@gmail.com
+2024-09-08 11:40:31,453 [TestNG-test-chrome testing-1] INFO in.podtest.testng.E2ETestcases - password used is: Password
+2024-09-08 11:40:31,457 [TestNG-test-chrome testing-1] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
+2024-09-08 11:40:33,342 [TestNG-test-chrome testing-2] WARN in.podtest.testng.E2ETestcases - I am a warn log
+2024-09-08 11:40:33,342 [TestNG-test-chrome testing-2] FATAL in.podtest.testng.E2ETestcases - I am a fatal  log
+2024-09-08 11:40:33,343 [TestNG-test-chrome testing-2] INFO in.podtest.testng.E2ETestcases - Testcase Started!
+2024-09-08 11:40:33,343 [TestNG-test-chrome testing-2] INFO in.podtest.testng.E2ETestcases - Username used is: Akhiljda@gmail.com
+2024-09-08 11:40:33,344 [TestNG-test-chrome testing-2] INFO in.podtest.testng.E2ETestcases - password used is: Password
+2024-09-08 11:40:33,344 [TestNG-test-chrome testing-2] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
+2024-09-08 11:40:34,419 [TestNG-test-chrome testing-1] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
+2024-09-08 11:40:34,797 [TestNG-test-chrome testing-2] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
+2024-09-08 11:40:40,111 [TestNG-test-edge testing-2] WARN in.podtest.testng.E2ETestcases - I am a warn log
+2024-09-08 11:40:40,112 [TestNG-test-edge testing-2] FATAL in.podtest.testng.E2ETestcases - I am a fatal  log
+2024-09-08 11:40:40,112 [TestNG-test-edge testing-2] INFO in.podtest.testng.E2ETestcases - Testcase Started!
+2024-09-08 11:40:40,112 [TestNG-test-edge testing-2] INFO in.podtest.testng.E2ETestcases - Username used is: Akhiljda@gmail.com
+2024-09-08 11:40:40,113 [TestNG-test-edge testing-2] INFO in.podtest.testng.E2ETestcases - password used is: Password
+2024-09-08 11:40:40,113 [TestNG-test-edge testing-2] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
+2024-09-08 11:40:40,177 [TestNG-test-edge testing-1] WARN in.podtest.testng.E2ETestcases - I am a warn log
+2024-09-08 11:40:40,205 [TestNG-test-edge testing-1] FATAL in.podtest.testng.E2ETestcases - I am a fatal  log
+2024-09-08 11:40:40,205 [TestNG-test-edge testing-1] INFO in.podtest.testng.E2ETestcases - Testcase Started!
+2024-09-08 11:40:40,205 [TestNG-test-edge testing-1] INFO in.podtest.testng.E2ETestcases - Username used is: Akhiljda@gmail.com
+2024-09-08 11:40:40,207 [TestNG-test-edge testing-1] INFO in.podtest.testng.E2ETestcases - password used is: Password
+2024-09-08 11:40:40,207 [TestNG-test-edge testing-1] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
+2024-09-08 11:40:45,930 [TestNG-test-edge testing-2] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
+2024-09-08 11:40:45,943 [TestNG-test-edge testing-1] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
+2024-09-08 11:41:01,608 [TestNG-test-chrome testing-2] INFO in.podtest.testng.E2ETestcases - Testcase Ended!
+2024-09-08 11:41:09,843 [TestNG-test-edge testing-2] INFO in.podtest.testng.E2ETestcases - Testcase Ended!
+2024-09-08 11:41:16,113 [TestNG-test-chrome testing-1] ERROR in.podtest.pom.CheckoutPOM - element not interactable
   (Session info: chrome=128.0.6613.120)
 Build info: version: '4.22.0', revision: 'c5f3146703*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e6ef3469056f83a4049372d70619bb3, clickElement {id=f.B1CDBB7AA0E6E0569F41FD5DA85D7722.d.024D81EF54E864F6CECAA4D7539875A1.e.154}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57420/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (1e6ef3469056f83a4049372d70619bb3)] -> xpath: //div[@class='shipping-methods']//input[@type='radio' and @id='method0']]
-Session ID: 1e6ef3469056f83a4049372d70619bb3
-2024-09-07 11:27:51,500 [main] ERROR in.podtest.pom.CheckoutPOM - [Ljava.lang.StackTraceElement;@3a894088
-2024-09-07 11:27:51,671 [main] INFO in.podtest.testng.E2ETestcases - Testcase Ended!
+Command: [e1bd813ead6c62bd2305ea4d605daabb, clickElement {id=f.282C9C74AB5FD4EE596EFEB3D3602F80.d.3F1BAED7142728E8980BCCC8FB85312E.e.87}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.120, chrome: {chromedriverVersion: 128.0.6613.119 (6e439cfca4d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54270}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54270/devtoo..., se:cdpVersion: 128.0.6613.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e1bd813ead6c62bd2305ea4d605daabb)] -> xpath: //div[@class='shipping-methods']//input[@type='radio' and @id='method0']]
+Session ID: e1bd813ead6c62bd2305ea4d605daabb
+2024-09-08 11:41:16,115 [TestNG-test-chrome testing-1] ERROR in.podtest.pom.CheckoutPOM - [Ljava.lang.StackTraceElement;@75f9dd87
+2024-09-08 11:41:16,298 [TestNG-test-chrome testing-1] INFO in.podtest.testng.E2ETestcases - Testcase Ended!
+2024-09-08 11:41:20,384 [TestNG-test-edge testing-1] ERROR in.podtest.pom.CheckoutPOM - element not interactable
+  (Session info: MicrosoftEdge=128.0.2739.67)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e7e9bce0a79ce366588670177acfaaa1, clickElement {id=f.F81A23C7B40F2B6FA0070E83D23F6640.d.76A77C3A358C05F684638C9A71E07B88.e.93}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54309}, msedge: {msedgedriverVersion: 128.0.2739.67 (248489733b87..., userDataDir: C:\Users\user\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54309/devtoo..., se:cdpVersion: 128.0.2739.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (e7e9bce0a79ce366588670177acfaaa1)] -> xpath: //div[@class='shipping-methods']//input[@type='radio' and @id='method0']]
+Session ID: e7e9bce0a79ce366588670177acfaaa1
+2024-09-08 11:41:20,384 [TestNG-test-edge testing-1] ERROR in.podtest.pom.CheckoutPOM - [Ljava.lang.StackTraceElement;@5cafcd47
+2024-09-08 11:41:20,464 [TestNG-test-edge testing-1] INFO in.podtest.testng.E2ETestcases - Testcase Ended!

@@ -11,16 +11,18 @@ import java.io.IOException;
 
 public class ScreenshotManager {
 
-    public static void takeScreenShot(WebDriver wd, String fileName) {
+    public static String takeScreenShot(WebDriver wd, String fileName) {
 
         File file = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
         String filePath = "src/test/resources/screenshots/"+fileName+".png";
-
+        File destination = new File(filePath);
         try {
-            FileUtils.copyFile(file, new File(filePath));
+            FileUtils.copyFile(file,destination );
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        return filePath;
 
     }
 
