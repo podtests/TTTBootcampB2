@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
 public class LoginStepDefinition {
@@ -17,7 +18,9 @@ public class LoginStepDefinition {
 
     @Given("Application URL is open")
     public void application_url_is_open() {
-        wd = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        wd = new ChromeDriver(options);
         loginPOM = new LoginPOM(wd);
         loginPOM.get("https://demo.evershop.io/account/login");
     }
