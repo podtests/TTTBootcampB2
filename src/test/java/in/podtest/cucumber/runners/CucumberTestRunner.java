@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         features = {"src/test/resources/features/Login.feature"},
         glue = {"in.podtest.cucumber.stepdefinitions", "in.podtest.cucumber.hooks"},
         tags =  "@jira100",
-        plugin = {"html:target/cucumber.html"}
+        plugin = {"html:target/cucumber.html", "json:target/cucumber.json"}
 )
 
 public class CucumberTestRunner extends AbstractTestNGCucumberTests {
