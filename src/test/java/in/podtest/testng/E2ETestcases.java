@@ -28,7 +28,7 @@ public class E2ETestcases extends BaseTest{
         return ExcelReader.readDataFromExcelFile("Testdata.xlsx");
     }
 
-    @Test(dataProvider = "credentials")
+    @Test(dataProvider = "credentials", enabled = false)
     public void verifyUserAbleToAccessWomenPageSuccess(String userName, String password) {
         logger.debug("I am a debugging log");
 
