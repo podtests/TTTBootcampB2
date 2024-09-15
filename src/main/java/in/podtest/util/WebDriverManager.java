@@ -2,6 +2,7 @@ package in.podtest.util;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 public class WebDriverManager {
@@ -13,7 +14,10 @@ public class WebDriverManager {
     public static  WebDriver createSession(String browserName) {
 
         if(browserName.equals("chrome")){
-            wd = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+
+            wd = new ChromeDriver(options);
         }
         else {
             wd = new EdgeDriver();
