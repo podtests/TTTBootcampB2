@@ -1,8 +1,4 @@
-2024-09-15 10:02:26,920 [main] WARN in.podtest.testng.E2ETestcases - I am a warn log
-2024-09-15 10:02:26,928 [main] FATAL in.podtest.testng.E2ETestcases - I am a fatal  log
-2024-09-15 10:02:26,929 [main] INFO in.podtest.testng.E2ETestcases - Testcase Started!
-2024-09-15 10:02:26,930 [main] INFO in.podtest.testng.E2ETestcases - Username used is: Akhiljda@gmail.com
-2024-09-15 10:02:26,931 [main] INFO in.podtest.testng.E2ETestcases - password used is: Password
-2024-09-15 10:02:26,955 [main] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
-2024-09-15 10:02:28,917 [main] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
-2024-09-15 10:02:37,138 [main] INFO in.podtest.testng.E2ETestcases - Testcase Ended!
+2024-09-15 10:54:49,984 [main] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
+2024-09-15 10:54:52,203 [main] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda@gmail.com
+2024-09-15 10:54:57,422 [main] INFO in.podtest.pom.LoginPOM - URL used is: https://demo.evershop.io/account/login
+2024-09-15 10:54:59,453 [main] INFO in.podtest.pom.LoginPOM - Username is:Akhiljda1@gmail.com

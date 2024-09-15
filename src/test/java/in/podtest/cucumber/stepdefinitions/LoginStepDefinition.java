@@ -2,6 +2,7 @@ package in.podtest.cucumber.stepdefinitions;
 
 import in.podtest.pom.HomePOM;
 import in.podtest.pom.LoginPOM;
+import in.podtest.util.WebDriverManager;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,9 +19,7 @@ public class LoginStepDefinition {
 
     @Given("Application URL is open")
     public void application_url_is_open() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        wd = new ChromeDriver(options);
+        wd = WebDriverManager.getSession();
         loginPOM = new LoginPOM(wd);
         loginPOM.get("https://demo.evershop.io/account/login");
     }
